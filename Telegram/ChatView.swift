@@ -8,31 +8,27 @@
 import SwiftUI
 
 struct ChatView: View {
-	@State private var array = [0, 1, 2]
-	
 	var body: some View {
 		NavigationView{
 			List{
-				ForEach(1..<12, id: \.self) { item in
-					HStack{
-						Image("UserPic1")
-							.resizable()
-							.aspectRatio(contentMode: .fill)
-							.clipShape(Circle())
-							.frame(width: 50, height: 50, alignment: .leading)
-						
-						VStack (alignment: .leading){
-							HStack {
-								Text("Calatorii")
-									.font(.system(size: 16)).bold()
-								Spacer()
-								Image("Read").imageScale(.small)
-								Text("20.06")
-									.font(.subheadline)
-									.padding(.leading, -5)
-									.foregroundColor(.gray)
-							}
-							
+				HStack{
+					Image("UserPic1")
+						.resizable()
+						.aspectRatio(contentMode: .fill)
+						.clipShape(Circle())
+						.frame(width: 50, height: 50, alignment: .leading)
+					VStack (alignment: .leading){
+						HStack {
+							Text("Calatorii")
+								.font(.system(size: 16)).bold()
+							Spacer()
+							Image("Read").imageScale(.small)
+							Text("20.06")
+								.font(.subheadline)
+								.padding(.leading, -5)
+								.foregroundColor(.gray)
+						}
+						HStack {
 							VStack(alignment: .leading) {
 								Text("You")
 									.font(.system(size: 14))
@@ -42,6 +38,9 @@ struct ChatView: View {
 									.foregroundColor(.gray)
 									.frame(maxHeight: 40)
 							}
+							Image(systemName: "pin.fill").imageScale(.small)
+								.rotationEffect(.init(degrees: 40), anchor: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+								.foregroundColor(.gray)
 						}
 					}
 				}
@@ -61,6 +60,7 @@ struct ChatView: View {
 		}
 	}
 }
+
 
 struct ChatView_Previews: PreviewProvider {
 	static var previews: some View {
