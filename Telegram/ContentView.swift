@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-	
 	var body: some View {
 		NavigationView{
 			List{
-				ForEach(1..<9) { item in
+				ForEach(1..<12, id: \.self) { item in
 					HStack{
 						Image("UserPic1")
 							.resizable()
@@ -29,6 +28,7 @@ struct ContentView: View {
 								Text("20.06")
 									.font(.subheadline)
 									.padding(.leading, -5)
+									.foregroundColor(.gray)
 							}
 							
 							VStack(alignment: .leading) {
@@ -55,7 +55,7 @@ struct ContentView: View {
 									}
 			)
 			.navigationBarTitle("Chats", displayMode: .inline)
-			.listStyle(GroupedListStyle())
+			.listStyle(PlainListStyle())
 		}
 	}
 }
