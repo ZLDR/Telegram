@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ChatView()
+        FirstPageView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatView()
+		
+        FirstPageView()
 			.environment(\.colorScheme, .dark)
+			.listStyle(GroupedListStyle())
+		
     }
 }
