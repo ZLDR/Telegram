@@ -10,8 +10,8 @@ import SwiftUI
 struct FirstPageView: View {
 	var body: some View {
 		NavigationView{
-			VStack{
-				PinChatView()
+			List(Service.listData) { item in
+				PinChatView(message: item)
 			}
 			.navigationBarItems(leading:
 									Button("Edit"){}
@@ -24,7 +24,7 @@ struct FirstPageView: View {
 									}
 			)
 			.navigationBarTitle("Chats", displayMode: .inline)
-			.listStyle(GroupedListStyle())
+			.listStyle(PlainListStyle())
 			
 		}
 	}

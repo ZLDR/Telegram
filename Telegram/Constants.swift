@@ -24,7 +24,7 @@ struct Constants {
 	struct Name {
 		static let name1 = "Călătorii"
 		static let name2 = "Ani"
-		static let name3 = "Jack"
+		static let name3 = "Jacqueline"
 		static let name4 = "Susan"
 		static let name5 = "Mark"
 		static let name6 = "UX Group"
@@ -35,19 +35,19 @@ struct Constants {
 	
 	struct Sender {
 		static let sender1 = "You"
-		static let sender2 = ""
-		static let sender3 = ""
+		static let sender2 = "Annie"
+		static let sender3 = "Jacqueline"
 		static let sender4 = "You"
 		static let sender5 = "You"
-		static let sender6 = ""
-		static let sender7 = ""
+		static let sender6 = "Ux Group"
+		static let sender7 = "Ivan"
 		static let sender8 = "Johny"
 		static let sender9 = "You"
 	}
 	
 	struct Text {
 		static let text1 = "Friendly reminder that nothing is 100% secure online. Including your DMs and the nudes you send on Snapchat."
-		static let text2 = "I was raised to believe this doesn’t happen here..."
+		static let text2 = "I was raised to believe this doesn’t happen here, but it does, and i have to live with it!"
 		static let text3 = "iOS 13.6 should be released to the public shortly."
 		static let text4 = "Today was my first day full-time at DigitalOcean. Me working there likely isn't news to anyone, but I have moved from being a contractor to an employee. 😱"
 		static let text5 = "Nobody show the other chickens this. If they turn on us, it’s a wrap"

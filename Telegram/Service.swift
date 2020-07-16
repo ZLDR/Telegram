@@ -9,6 +9,11 @@ import Foundation
 
 struct Service {
 	static let listData: [ListElement] = [
-		ListElement(Photo: Constants.Photos.photo1, Name: Constants.Name.name1, Sender: Constants.Sender.sender1, Text: Constants.Text.text1, Time: Constants.Text.text1, Status: Constants.Status.status1)
+		ListElement(photo: Constants.Photos.photo1, name: Constants.Name.name1, sender: Constants.Sender.sender1, text: Constants.Text.text1, time: Constants.Time.time1, status: Constants.Status.status1),
+		
+		ListElement(photo: Constants.Photos.photo2, name: Constants.Name.name2, sender: Constants.Sender.sender2, text: Constants.Text.text2, time: Constants.Time.time2, status: Constants.Status.status2),
+		
+		ListElement(photo: Constants.Photos.photo3, name: Constants.Name.name3, sender: Constants.Sender.sender3, text: Constants.Text.text3, time: Constants.Time.time3, status: Constants.Status.status3)
+		
 	]
 		}

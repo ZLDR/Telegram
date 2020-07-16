@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ListElement: Identifiable{
 	var id = UUID()
-	var Photo: String
-	var Name: String
-	var Sender: String
-	var Text: String
-	var Time: String
-	var Status: String
+	var photo: String
+	var name: String
+	var sender: String
+	var text: String
+	var time: String
+	var status: String
 }
  

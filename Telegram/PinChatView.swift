@@ -8,40 +8,40 @@
 import SwiftUI
 
 struct PinChatView: View {
-	@ObservedObject var message = Message()
 	
-	init() {
-		UITableView.appearance().tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: Double.leastNonzeroMagnitude))
-	}
+	var message: ListElement
+	
 	var body: some View {
-		List(0 ..< 9){ item in
-			Image(message.Photo)
+		HStack{
+			Image(message.photo)
 				.resizable()
 				.aspectRatio(contentMode: .fill)
 				.clipShape(Circle())
 				.frame(width: 50, height: 50, alignment: .leading)
 			VStack (alignment: .leading){
 				HStack {
-					Text(message.Name)
+					Text(message.name)
 						.font(.system(size: 16)).bold()
 					Spacer()
-					Image(message.Status).imageScale(.small)
-					Text(message.Time)
+					Image(message.status).imageScale(.small)
+					Text(message.time)
 						.font(.subheadline)
-						.padding(.leading, -5)
 						.foregroundColor(.gray)
 				}
 				HStack {
 					VStack(alignment: .leading) {
-						Text(message.Sender)
+						Text(message.sender)
 							.font(.system(size: 14))
-							.padding(.top, -10)
-						Text(message.Text)
+							.padding(.top, -8)
+						
+						Text(message.text)
 							.font(.system(size: 14))
 							.foregroundColor(.gray)
-							.frame(maxHeight: 40)
+							.frame(maxWidth: 260, maxHeight: 40)
 					}
-					Image(systemName: "pin.fill").imageScale(.small)
+					Spacer()
+					Image(systemName: "pin.fill")
+						.imageScale(.small)
 						.rotationEffect(.init(degrees: 40), anchor: .center)
 						.foregroundColor(.gray)
 				}
@@ -50,9 +50,13 @@ struct PinChatView: View {
 	}
 }
 
-struct PinChatView_Previews: PreviewProvider {
-    static var previews: some View {
-        PinChatView()
-			.environment(\.colorScheme, .dark)
-    }
+struct PinChat_Previews: PreviewProvider {
+	static var previews: some View {
+		List(Service.listData) { item in
+			PinChatView(message: item)
+				.environment(\.colorScheme, .dark)
+		}
+		.preferredColorScheme(.dark)
+	}
 }
+
