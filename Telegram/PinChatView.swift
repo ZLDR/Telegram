@@ -18,7 +18,7 @@ struct PinChatView: View {
 				.aspectRatio(contentMode: .fill)
 				.clipShape(Circle())
 				.frame(width: 50, height: 50, alignment: .leading)
-			VStack (alignment: .leading){
+			VStack{
 				HStack {
 					Text(message.name)
 						.font(.system(size: 16)).bold()
@@ -28,17 +28,18 @@ struct PinChatView: View {
 						.font(.subheadline)
 						.foregroundColor(.gray)
 				}
+				.padding(.bottom, -10)
 				HStack {
 					VStack(alignment: .leading) {
 						Text(message.sender)
 							.font(.system(size: 14))
-							.padding(.top, -8)
 						
 						Text(message.text)
 							.font(.system(size: 14))
 							.foregroundColor(.gray)
-							.frame(maxWidth: 260, maxHeight: 40)
+							.frame(width: 270, height: 40,alignment: .leading)
 					}
+					.multilineTextAlignment(.leading)
 					Spacer()
 					Image(systemName: "pin.fill")
 						.imageScale(.small)
