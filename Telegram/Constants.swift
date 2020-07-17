@@ -69,18 +69,4 @@ struct Constants {
 		static let status8 = "Read"
 		static let status9 = "Read"
 	}
-	
-	struct TabBarImageName {
-		static let tabBar1 = "person.crop.circle.fill"
-		static let tabBar2 = "phone.fill"
-		static let tabBar3 = "message.fill"
-		static let tabBar4 = "gear"
-	}
-	
-	struct TabBarItemText {
-		static let tabBar1 = "Contacts"
-		static let tabBar2 = "Calls"
-		static let tabBar3 = "Chats"
-		static let tabBar4 = "Settings"
-	}
 }
