@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PinChatView: View {
+struct ListChatView: View {
 	
 	var message: ListElement
 	
@@ -31,13 +31,10 @@ struct PinChatView: View {
 				.padding(.bottom, -10)
 				HStack {
 					VStack(alignment: .leading) {
-						Text(message.sender)
-							.font(.system(size: 14))
-						
 						Text(message.text)
 							.font(.system(size: 14))
 							.foregroundColor(.gray)
-							.frame(width: 270, height: 40,alignment: .leading)
+							.frame(width: 265, height: 40,alignment: .leading)
 					}
 					.multilineTextAlignment(.leading)
 					Spacer()
@@ -51,10 +48,10 @@ struct PinChatView: View {
 	}
 }
 
-struct PinChat_Previews: PreviewProvider {
+struct ListChat_Previews: PreviewProvider {
 	static var previews: some View {
 		List(Service.listData) { item in
-			PinChatView(message: item)
+			ListChatView(message: item)
 				.environment(\.colorScheme, .dark)
 		}
 		.preferredColorScheme(.dark)

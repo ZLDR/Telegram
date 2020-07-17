@@ -11,22 +11,23 @@ struct FirstPageView: View {
 	var body: some View {
 		NavigationView{
 			List(Service.listData) { item in
-				PinChatView(message: item)
+				ListChatView(message: item)
 			}
-			.navigationBarItems(leading:
-									Button("Edit"){}
-								,
-								trailing:
-									Button(action: {
-										print("User icon pressed...")
-									}) {
-										Image(systemName: "square.and.pencil").imageScale(.large)
-									}
-			)
-			.navigationBarTitle("Chats", displayMode: .inline)
-			.listStyle(PlainListStyle())
-			
+				.navigationBarItems(leading:
+										Button("Edit"){}
+									,
+									trailing:
+										Button(action: {
+											print("User icon pressed...")
+										}) {
+											Image(systemName: "square.and.pencil").imageScale(.large)
+										}
+				)
+				.navigationBarTitle("Chats", displayMode: .inline)
+				.listStyle(PlainListStyle())
+				.environment(\.defaultMinListRowHeight, 80)
 		}
+		
 	}
 }
 

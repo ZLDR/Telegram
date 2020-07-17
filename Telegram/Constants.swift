@@ -33,18 +33,6 @@ struct Constants {
 		static let name9 = "Rock Team"
 	}
 	
-	struct Sender {
-		static let sender1 = "You"
-		static let sender2 = "Annie"
-		static let sender3 = "Jacqueline"
-		static let sender4 = "You"
-		static let sender5 = "You"
-		static let sender6 = "Ux Group"
-		static let sender7 = "Ivan"
-		static let sender8 = "Johny"
-		static let sender9 = "You"
-	}
-	
 	struct Text {
 		static let text1 = "Friendly reminder that nothing is 100% secure online. Including your DMs and the nudes you send on Snapchat."
 		static let text2 = "I was raised to believe this doesn’t happen here, but it does, and i have to live with it!"
@@ -80,5 +68,19 @@ struct Constants {
 		static let status7 = "Read"
 		static let status8 = "Read"
 		static let status9 = "Read"
+	}
+	
+	struct TabBarImageName {
+		static let tabBar1 = "person.crop.circle.fill"
+		static let tabBar2 = "phone.fill"
+		static let tabBar3 = "message.fill"
+		static let tabBar4 = "gear"
+	}
+	
+	struct TabBarItemText {
+		static let tabBar1 = "Contacts"
+		static let tabBar2 = "Calls"
+		static let tabBar3 = "Chats"
+		static let tabBar4 = "Settings"
 	}
 }

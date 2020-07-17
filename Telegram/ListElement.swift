@@ -11,7 +11,6 @@ struct ListElement: Identifiable{
 	var id = UUID()
 	var photo: String
 	var name: String
-	var sender: String
 	var text: String
 	var time: String
 	var status: String
