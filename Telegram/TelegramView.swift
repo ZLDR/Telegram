@@ -10,7 +10,7 @@ import SwiftUI
 struct TelegramView: View {
     var body: some View {
 		TabView{
-			ChatView()
+			ChatViewPage()
 				.tabItem {
 					Text("Contacts")
 					Image(systemName: "person.crop.circle.fill")
@@ -18,7 +18,7 @@ struct TelegramView: View {
 				}
 				.tag(0)
 			
-			ChatView()
+			ChatViewPage()
 				.tabItem {
 					Text("Contacts")
 					Image(systemName: "phone.fill")
@@ -26,7 +26,7 @@ struct TelegramView: View {
 				}
 				.tag(1)
 			
-			ChatView()
+			ChatViewPage()
 				.tabItem {
 					Text("Chats")
 					Image(systemName: "message.fill")
@@ -34,7 +34,7 @@ struct TelegramView: View {
 				}
 				.tag(2)
 			
-			ChatView()
+			ChatViewPage()
 				.tabItem {
 					Text("Settings")
 					Image(systemName: "gear")
