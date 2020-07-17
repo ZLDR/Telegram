@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        FirstPageView()
+        Text("Hi")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 		
-        FirstPageView()
+        ContentView()
 			.environment(\.colorScheme, .dark)
 			.listStyle(GroupedListStyle())
 		

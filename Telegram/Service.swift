@@ -23,8 +23,6 @@ struct Service {
 		
 		ListElement(photo: Constants.Photos.photo7, name: Constants.Name.name7, text: Constants.Text.text7, time: Constants.Time.time7, status: Constants.Status.status7),
 		
-		ListElement(photo: Constants.Photos.photo8, name: Constants.Name.name8, text: Constants.Text.text8, time: Constants.Time.time8, status: Constants.Status.status8),
-		
-		ListElement(photo: Constants.Photos.photo9, name: Constants.Name.name9, text: Constants.Text.text9, time: Constants.Time.time9, status: Constants.Status.status9)
+		ListElement(photo: Constants.Photos.photo8, name: Constants.Name.name8, text: Constants.Text.text8, time: Constants.Time.time8, status: Constants.Status.status8)
 	]
-		}
+}

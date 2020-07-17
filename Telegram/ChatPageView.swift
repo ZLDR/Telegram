@@ -9,12 +9,14 @@ import SwiftUI
 
 struct ChatPageView: View {
     var body: some View {
-		Text("Hi")
+		ChatView()
+		
     }
 }
 
 struct ChatPage_Previews: PreviewProvider {
     static var previews: some View {
         ChatPageView()
+			.environment(\.colorScheme, .dark)
     }
 }
