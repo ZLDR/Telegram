@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SettingsPageView: View {
     var body: some View {
         Text("Hi")
     }
@@ -16,7 +16,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 		
-        ContentView()
+        SettingsPageView()
 			.environment(\.colorScheme, .dark)
 			.listStyle(GroupedListStyle())
 		

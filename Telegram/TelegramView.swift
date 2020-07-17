@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChatPageView: View {
+struct TelegramView: View {
     var body: some View {
 		TabView{
 			ChatView()
@@ -45,9 +45,9 @@ struct ChatPageView: View {
     }
 }
 
-struct ChatPage_Previews: PreviewProvider {
+struct TelegramView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatPageView()
+        TelegramView()
 			.environment(\.colorScheme, .dark)
     }
 }
