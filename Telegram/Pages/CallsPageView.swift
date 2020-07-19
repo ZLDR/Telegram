@@ -14,7 +14,7 @@ struct CallsPageView: View {
 				CallsPageElement()
 			}
 			.navigationBarItems(leading:
-			Button("Edit"){}
+			EditButton()
 			,
 			trailing:
 			Button(action: {
@@ -25,7 +25,7 @@ struct CallsPageView: View {
 			)
 			.navigationBarTitle("Calls", displayMode: .inline)
 			.listStyle(PlainListStyle())
-			.environment(\.defaultMinListRowHeight, 90)
+			.environment(\.defaultMinListRowHeight, 45)
 		}
 	}
 }

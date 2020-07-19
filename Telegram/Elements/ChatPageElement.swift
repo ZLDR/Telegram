@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ChatPageElement: View {
+	
 	var body: some View {
 		List {
-			ForEach(Service.listData){ item in
+			ForEach(Service.listData, id: \.id){ item in
 				HStack{
 					Image(item.photo)
 						.resizable()
@@ -35,7 +36,7 @@ struct ChatPageElement: View {
 								Text(item.text)
 									.font(.system(size: 14))
 									.foregroundColor(.gray)
-									.frame(maxHeight: 40)
+									.lineLimit(2)
 								Spacer()
 								Image(systemName: item.pinned)
 									.rotationEffect(.init(degrees: 45))
@@ -47,7 +48,11 @@ struct ChatPageElement: View {
 					}
 				}
 			}
+			.onDelete(perform: delete)
 		}
+	}
+	func delete(at offsets: IndexSet) {
+		Service.listData.remove(atOffsets: offsets)
 	}
 }
 

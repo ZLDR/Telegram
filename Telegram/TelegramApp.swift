@@ -11,7 +11,7 @@ import SwiftUI
 struct TelegramApp: App {
     var body: some Scene {
         WindowGroup {
-            SettingsPageView()
+            TelegramView()
         }
     }
 }

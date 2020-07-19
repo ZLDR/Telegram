@@ -14,7 +14,7 @@ struct ChatViewPage: View {
 				ChatPageElement()
 			}
 			.navigationBarItems(leading:
-									Button("Edit"){}
+									EditButton()
 								,
 								trailing:
 									Button(action: {

@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Service {
-	static let listData: [ListElement] = [
+struct Service{
+	
+	static var listData: [ListElement] = [
 		ListElement(photo: Constants.Photos.photo1, name: Constants.Name.name1, text: Constants.Text.text1, time: Constants.Time.time1, status: Constants.Status.status1,  pinned: Constants.Pinned.pinned1, callstatus: Constants.CallStatus.callstatus1, calldate: Constants.CallDate.calldate1),
 		
 		ListElement(photo: Constants.Photos.photo2, name: Constants.Name.name2, text: Constants.Text.text2, time: Constants.Time.time2, status: Constants.Status.status2,  pinned: Constants.Pinned.pinned2, callstatus: Constants.CallStatus.callstatus2, calldate: Constants.CallDate.calldate2),
