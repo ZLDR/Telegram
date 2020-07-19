@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CallsPageElement: View {
 	var body: some View {
-		List(Service.listData) { item in
+		List{
+			ForEach(Service.listData){ item in
 			HStack{
 				Image(item.photo)
 					.resizable()
@@ -29,13 +30,13 @@ struct CallsPageElement: View {
 					Text(item.calldate)
 						.font(.system(size: 16))
 						.foregroundColor(.gray)
-						.frame(maxHeight: 40)
+						.frame(maxHeight: 30)
 					Image(systemName: "info.circle")
 						.imageScale(.large)
 				}
 			}
 		}
-		
+		}
 	}
 }
 
