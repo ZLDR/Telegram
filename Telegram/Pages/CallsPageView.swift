@@ -10,31 +10,8 @@ import SwiftUI
 struct CallsPageView: View {
 	var body: some View {
 		NavigationView{
-			List(Service.listData) { item in
-				HStack{
-					Image(item.photo)
-						.resizable()
-						.aspectRatio(contentMode: .fill)
-						.clipShape(Circle())
-						.frame(width: 50, height: 50, alignment: .leading)
-					VStack(alignment: .leading){
-						Text(item.name)
-							.font(.system(size: 16)).bold()
-							.foregroundColor(.white)
-						Text(item.callstatus)
-							.font(.system(size: 16))
-							.foregroundColor(.gray)
-					}
-					Spacer()
-					HStack {
-						Text(item.calldate)
-							.font(.system(size: 16))
-							.foregroundColor(.gray)
-							.frame(maxHeight: 40)
-						Image(systemName: "info.circle")
-							.imageScale(.alrge)
-					}
-				}
+			HStack{
+				CallsPageElement()
 			}
 			.navigationBarItems(leading:
 			Button("Edit"){}
