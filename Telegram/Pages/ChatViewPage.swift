@@ -17,7 +17,7 @@ struct ChatViewPage: View {
 						.aspectRatio(contentMode: .fill)
 						.clipShape(Circle())
 						.frame(width: 50, height: 50, alignment: .leading)
-					VStack (alignment: .leading){
+					VStack(alignment: .leading){
 						HStack {
 							Text(item.name)
 								.font(.system(size: 16)).bold()
@@ -29,6 +29,7 @@ struct ChatViewPage: View {
 								.padding(.leading, -5)
 								.foregroundColor(.gray)
 						}
+						.padding(.top, -5)
 						HStack {
 							HStack {
 								Text(item.text)
@@ -36,12 +37,13 @@ struct ChatViewPage: View {
 									.foregroundColor(.gray)
 									.frame(maxHeight: 40)
 								Spacer()
-								Image(systemName: "pin.fill")
+								Image(systemName: item.pinned)
 									.rotationEffect(.init(degrees: 45))
 									.foregroundColor(.gray)
 							}
 							.frame(alignment: .leading)
 						}
+						.padding(.top, -12)
 					}
 				}
 			}
@@ -57,7 +59,7 @@ struct ChatViewPage: View {
 			)
 			.navigationBarTitle("Chats", displayMode: .inline)
 			.listStyle(PlainListStyle())
-			.environment(\.defaultMinListRowHeight, 80)
+			.environment(\.defaultMinListRowHeight, 90)
 		}
 	}
 }

@@ -10,35 +10,39 @@ import SwiftUI
 struct TelegramView: View {
     var body: some View {
 		TabView{
-			ChatViewPage()
+			ContactsPageView()
 				.tabItem {
 					Text("Contacts")
+						.font(.body)
 					Image(systemName: "person.crop.circle.fill")
-						.font(.system(size: 24))
+						.font(.system(size: 23))
 				}
 				.tag(0)
 			
-			ChatViewPage()
+			CallsPageView()
 				.tabItem {
-					Text("Contacts")
+					Text("Calls")
+						.font(.body)
 					Image(systemName: "phone.fill")
-						.font(.system(size: 24))
+						.font(.system(size: 23))
 				}
 				.tag(1)
 			
 			ChatViewPage()
 				.tabItem {
 					Text("Chats")
+						.font(.body)
 					Image(systemName: "message.fill")
-						.font(.system(size: 24))
+						.font(.system(size: 23))
 				}
 				.tag(2)
 			
-			ChatViewPage()
+			SettingsPageView()
 				.tabItem {
 					Text("Settings")
+						.font(.body)
 					Image(systemName: "gear")
-						.font(.system(size: 24))
+						.font(.system(size: 23))
 				}
 				.tag(3)
 		}

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7E08B0F024C1D0AD000FFA4C /* ChatViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E08B0EF24C1D0AD000FFA4C /* ChatViewPage.swift */; };
 		7E08B0F224C1EC48000FFA4C /* ContactsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E08B0F124C1EC48000FFA4C /* ContactsPageView.swift */; };
+		7E08B0F624C20C79000FFA4C /* CallsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E08B0F524C20C79000FFA4C /* CallsPageView.swift */; };
 		7E2ADDDC24BD1F2C0030C4BC /* TelegramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2ADDDB24BD1F2C0030C4BC /* TelegramApp.swift */; };
 		7E2ADDE024BD1F2F0030C4BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2ADDDF24BD1F2F0030C4BC /* Assets.xcassets */; };
 		7E2ADDE324BD1F2F0030C4BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E2ADDE224BD1F2F0030C4BC /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		7E08B0EF24C1D0AD000FFA4C /* ChatViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewPage.swift; sourceTree = "<group>"; };
 		7E08B0F124C1EC48000FFA4C /* ContactsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsPageView.swift; sourceTree = "<group>"; };
+		7E08B0F524C20C79000FFA4C /* CallsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsPageView.swift; sourceTree = "<group>"; };
 		7E2ADDD824BD1F2C0030C4BC /* Telegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2ADDDB24BD1F2C0030C4BC /* TelegramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramApp.swift; sourceTree = "<group>"; };
 		7E2ADDDF24BD1F2F0030C4BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 				7E08B0F124C1EC48000FFA4C /* ContactsPageView.swift */,
 				7E08B0EF24C1D0AD000FFA4C /* ChatViewPage.swift */,
 				7E2ADDEA24BE5A9D0030C4BC /* SettingsPageView.swift */,
+				7E08B0F524C20C79000FFA4C /* CallsPageView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				7E08B0F224C1EC48000FFA4C /* ContactsPageView.swift in Sources */,
 				7E2ADDEB24BE5A9D0030C4BC /* SettingsPageView.swift in Sources */,
 				7E2ADDFC24C0926C0030C4BC /* TelegramView.swift in Sources */,
+				7E08B0F624C20C79000FFA4C /* CallsPageView.swift in Sources */,
 				7E2ADDF824C07D890030C4BC /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

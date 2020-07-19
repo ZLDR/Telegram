@@ -14,5 +14,7 @@ struct ListElement: Identifiable{
 	var text: String
 	var time: String
 	var status: String
+	var pinned: String
+	var callstatus: String
+	var calldate: String
 }
- 
