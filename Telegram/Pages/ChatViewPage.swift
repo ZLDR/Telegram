@@ -10,7 +10,7 @@ import SwiftUI
 struct ChatViewPage: View {
 	var body: some View {
 		NavigationView{
-			HStack{
+			VStack{
 				ChatPageElement()
 			}
 			.navigationBarItems(leading:
@@ -25,7 +25,6 @@ struct ChatViewPage: View {
 			)
 			.navigationBarTitle("Chats", displayMode: .inline)
 			.listStyle(PlainListStyle())
-			.environment(\.defaultMinListRowHeight, 90)
 		}
 	}
 }

@@ -20,6 +20,7 @@
 		7E2ADDFC24C0926C0030C4BC /* TelegramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2ADDFB24C0926C0030C4BC /* TelegramView.swift */; };
 		7E87788424C4B4C500655676 /* CallsPageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87788324C4B4C500655676 /* CallsPageElement.swift */; };
 		7E87788724C4B6DF00655676 /* ChatPageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87788624C4B6DF00655676 /* ChatPageElement.swift */; };
+		7E87788924C5266600655676 /* PinChatPageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87788824C5266600655676 /* PinChatPageElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		7E2ADDFB24C0926C0030C4BC /* TelegramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramView.swift; sourceTree = "<group>"; };
 		7E87788324C4B4C500655676 /* CallsPageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsPageElement.swift; sourceTree = "<group>"; };
 		7E87788624C4B6DF00655676 /* ChatPageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPageElement.swift; sourceTree = "<group>"; };
+		7E87788824C5266600655676 /* PinChatPageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinChatPageElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +93,10 @@
 		7E2ADDDA24BD1F2C0030C4BC /* Telegram */ = {
 			isa = PBXGroup;
 			children = (
+				7E2ADDDB24BD1F2C0030C4BC /* TelegramApp.swift */,
 				7E08B0F424C1F010000FFA4C /* Service */,
 				7E87788524C4B63500655676 /* Elements */,
 				7E08B0F324C1EC64000FFA4C /* Pages */,
-				7E2ADDDB24BD1F2C0030C4BC /* TelegramApp.swift */,
 				7E2ADDFB24C0926C0030C4BC /* TelegramView.swift */,
 				7E2ADDDF24BD1F2F0030C4BC /* Assets.xcassets */,
 				7E2ADDE424BD1F2F0030C4BC /* Info.plist */,
@@ -116,6 +118,7 @@
 			children = (
 				7E87788324C4B4C500655676 /* CallsPageElement.swift */,
 				7E87788624C4B6DF00655676 /* ChatPageElement.swift */,
+				7E87788824C5266600655676 /* PinChatPageElement.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				7E2ADDDC24BD1F2C0030C4BC /* TelegramApp.swift in Sources */,
 				7E08B0F024C1D0AD000FFA4C /* ChatViewPage.swift in Sources */,
 				7E87788424C4B4C500655676 /* CallsPageElement.swift in Sources */,
+				7E87788924C5266600655676 /* PinChatPageElement.swift in Sources */,
 				7E87788724C4B6DF00655676 /* ChatPageElement.swift in Sources */,
 				7E08B0F224C1EC48000FFA4C /* ContactsPageView.swift in Sources */,
 				7E2ADDEB24BE5A9D0030C4BC /* SettingsPageView.swift in Sources */,
