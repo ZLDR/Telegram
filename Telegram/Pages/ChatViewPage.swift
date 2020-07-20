@@ -10,7 +10,7 @@ import SwiftUI
 struct ChatViewPage: View {
 	var body: some View {
 		NavigationView{
-			VStack{
+			VStack(spacing: 0){
 				ChatPageElement()
 			}
 			.navigationBarItems(leading:

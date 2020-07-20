@@ -39,7 +39,7 @@
 		7E2ADDFB24C0926C0030C4BC /* TelegramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramView.swift; sourceTree = "<group>"; };
 		7E87788324C4B4C500655676 /* CallsPageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsPageElement.swift; sourceTree = "<group>"; };
 		7E87788624C4B6DF00655676 /* ChatPageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPageElement.swift; sourceTree = "<group>"; };
-		7E87788824C5266600655676 /* PinChatPageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinChatPageElement.swift; sourceTree = "<group>"; };
+		7E87788824C5266600655676 /* PinChatPageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinChatPageElement.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
