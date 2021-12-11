@@ -31,17 +31,19 @@ struct PinChatPageElement: View {
                             }
                             HStack{
                                 Text(item.text)
-                                    .font(.system(size: 14))
+                                    .font(.system(size: 16))
                                     .foregroundColor(.gray)
-                                    .frame(width: 260, height: 50, alignment: .topLeading)
-                                
+                                    .lineLimit(2)
                                 Spacer()
                                 Image(systemName: item.pinned)
                                     .rotationEffect(.init(degrees: 45))
                                     .foregroundColor(.gray)
                             }
+                            .padding(.bottom, 6)
                         }
+                        Spacer()
                     }
+                    .padding(.top, 4)
                     .background(Color(UIColor.secondarySystemBackground))
                 }
             }

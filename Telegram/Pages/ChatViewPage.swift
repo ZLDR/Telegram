@@ -8,30 +8,25 @@
 import SwiftUI
 
 struct ChatViewPage: View {
-	var body: some View {
-		NavigationView{
-			VStack(spacing: 0){
-				ChatPageElement()
-			}
-			.navigationBarItems(leading:
-									EditButton()
-								,
-								trailing:
-									Button(action: {
-										print("User icon pressed...")
-									}) {
-										Image(systemName: "square.and.pencil").imageScale(.large)
-									}
-			)
-			.navigationBarTitle("Chats", displayMode: .inline)
-			.listStyle(PlainListStyle())
-		}
-	}
+    var body: some View {
+        VStack{
+            ChatPageElement()
+        }
+        .navigationBarItems(leading: EditButton(),trailing: Button(action: {
+            print("User icon pressed...")
+        })
+                            {
+            Image(systemName: "square.and.pencil").imageScale(.large)
+        }
+        )
+        .navigationBarTitle("Chats", displayMode: .inline)
+        .listStyle(PlainListStyle())
+    }
 }
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
         ChatViewPage()
-			.environment(\.colorScheme, .dark)
+            .environment(\.colorScheme, .dark)
     }
 }
